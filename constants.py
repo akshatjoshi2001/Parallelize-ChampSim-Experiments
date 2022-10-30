@@ -1,0 +1,5 @@
+CHAMPSIM_SOURCE_FOLDER = "../ChampSim"
+BINARY_STORE_FOLDER = "bins"
+RESULTS_STORE_FOLDER = "results"
+CONFIG_FILE_STORE = "configs"
+EXPERIMENTS_JSON = "experiments.json"
