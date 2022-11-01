@@ -4,7 +4,6 @@ import json
 import os
 import time
 
-
 class Experiment:
     def __init__(self, name, config_path):
         self.name = name
@@ -34,7 +33,7 @@ def schedule_experiments(experiments):
     for i in range(0, len(processes), constants.NUM_OF_PROCESSES_IN_ONE_GO):
         currently_running = []
         print("=================================")
-        for j in range(i, i + constants.NUM_OF_PROCESSES_IN_ONE_GO):
+        for j in range(i, min(i + constants.NUM_OF_PROCESSES_IN_ONE_GO,len(processes))):
             f = open(processes[j]["result_file"], "w")
             print(f"Now running {processes[j]['proc_name']} ")
             currently_running.append(
