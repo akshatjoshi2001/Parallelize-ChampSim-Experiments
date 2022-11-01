@@ -9,7 +9,7 @@ class Experiment:
         self.name = name
         self.config_path = config_path
         self.binary_path = None
-        self.result_store_folder = []
+        
 
 
 def schedule_experiments(experiments):
